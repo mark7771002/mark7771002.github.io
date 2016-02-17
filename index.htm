@@ -1,0 +1,1007 @@
+<htm>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style style="text/css">
+<!--
+html, body { margin: 0; padding: 0; height: 100%; border:none; }
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strong, sub, sup, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1;
+background-color: rgba(255,255,255,1);
+background-color: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background-color: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+background-color: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background-color: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background-color: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background-color: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#banner{
+padding:30px;
+width:100%;
+background-color:#003377;
+}
+#banner  #navigation {
+        position:relative;
+        left:200px;
+	z-index:2;
+	margin:0; 
+	padding:0;
+	width:1500px;
+	list-style-type:none; 
+	font:24px Arial; 
+       
+        }
+ 
+#banner  #navigation li {
+float:left; 
+    padding:0; 
+	margin:0 10px 0 0; 
+	_margin:0 2px 0 0; 
+	width:230px;
+ 
+}
+ 
+/* 設置選單區塊*/
+#banner  #navigation li dl { 
+	width:100%;/*ie6*/
+          margin:0; 
+	padding:0;
+	background-color:#fff;
+	border:solid 2px #666; 
+
+}  
+
+ 
+/* 設置主選單dt */
+#banner  #navigation li dt {
+	text-align:center;
+	line-height:100px;
+		
+	font-size: 24px;
+	font-weight: bold;
+	height:75px;
+	overflow:hidden;
+ border: 1px solid black;
+background-image: -webkit-gradient(linear, center top, center bottom, from(#167fe8 34%), to(#003c7b));
+background-image: -webkit-linear-gradient(top, #167fe8 34%, #003c7b);
+background-image: -moz-linear-gradient(top, #167fe8 34%, #003c7b);
+background-image: -o-linear-gradient(top, #167fe8 34%, #003c7b);
+background-image: -ms-linear-gradient(top, #167fe8 34%, #003c7b);
+background-image: linear-gradient(to bottom, #167fe8 34%, #003c7b);
+-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.75), inset 0 2px 14px 8px rgba(108,92,255,0.94);
+-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.75), inset 0 2px 14px 8px rgba(108,92,255,0.94);
+box-shadow: 0 1px 5px rgba(0,0,0,0.75), inset 0 2px 14px 8px rgba(108,92,255,0.94);
+
+}
+
+#banner  #navigation li dt:hover{
+
+-moz-box-shadow: 2px 2px 5px #003377 inset; /* 老的 Firefox */
+box-shadow: 10px 10px 5px #003377 inset;
+
+
+}
+#banner  #navigation li dt a ,#banner  #navigation  li dt a:visited {
+	display:block; 
+    color:#333;
+    text-decoration:none;
+	}
+ 
+/* 設置子選單dd並隱藏子選單*/
+#banner  #navigation li dd { 
+	margin:0; 
+    padding:0; 
+   height:50px;
+border: 1px solid black;
+border-radius: 3px;
+background-image: -webkit-gradient(linear, center top, center bottom, from(#bfbfbf), to(#fcfcfc), color-stop(98%, #f2f2f2), color-stop(98%, #000), color-stop(77%, rgba()));
+background-image: -webkit-linear-gradient(top, #bfbfbf, #f2f2f2 98%, #000 98%, rgba() 77%, #fcfcfc);
+background-image: -moz-linear-gradient(top, #bfbfbf, #f2f2f2 98%, #000 98%, rgba() 77%, #fcfcfc);
+background-image: -o-linear-gradient(top, #bfbfbf, #f2f2f2 98%, #000 98%, rgba() 77%, #fcfcfc);
+background-image: -ms-linear-gradient(top, #bfbfbf, #f2f2f2 98%, #000 98%, rgba() 77%, #fcfcfc);
+background-image: linear-gradient(to bottom, #bfbfbf, #f2f2f2 98%, #000 98%, rgba() 77%, #fcfcfc);
+-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.75), inset 0 1px 0 white;
+-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.75), inset 0 1px 0 white;
+box-shadow: 0 1px 5px rgba(0,0,0,0.75), inset 0 1px 0 white;
+ display:none;
+} 
+
+#banner  #navigation li dd.last {
+	border-bottom:0;
+	}	
+ 
+#banner  #navigation li dd a,#banner  #navigation  li dd a:visited {
+	display:block; 
+	color:#333; 
+    text-decoration:none; 
+    
+    padding:4px 5px 4px 20px;
+    }
+ 
+ 
+
+ 
+ 
+/* 滑鼠滑入顯示子選單 */
+#banner  #navigation li:hover dd,#banner  #navigation li a:hover dd { display:block}
+ 
+/*ie6 hack*/
+#banner  #navigation li:hover,#banner  #navigation li a:hover { border:0;;opeacity:0.5;}
+
+ 
+
+.divw { 
+  background-color:#000000; 
+ position:absolute ;
+height:auto;
+width:100%;
+float:left;
+
+}
+
+.divw p{
+ font-size:1.2cm;
+font-weight: bold;
+color:#FFFFFF ;
+margin:90px auto  auto 350px;
+
+letter-spacing: 10px;
+text-align: justify;
+}
+
+
+
+
+
+/*輪播圖*/
+.slideshow {
+ position:relative;
+	height:auto;
+	width:100%;
+        left:-15px;
+	bottom:-180px;
+	margin: 0 10px;
+     z-index:0;
+	border: 3px solid #ddd;
+}
+.slideshow li {
+
+	position: absolute;
+        top:0px;
+        right:0px; 
+	list-style-type:none;
+
+}
+.slideshow a .im{
+	display: block;
+	padding: 0;
+	margin: 0 auto;
+	border: none;
+       	height: 600px;
+	width: 1885px;
+        border:1px solid #999;
+  padding:5px;
+  background:#efefef;
+ z-index:1;
+}
+
+
+
+.slideshow li a{
+	display: block;
+}
+
+
+/*文字列*/
+.page-curl {
+	background: #FFFFFF;
+	background: -moz-linear-gradient(0deg, #F5F5F5 0%, #FFF 25%, #FFF 75%, #F5F5F5 100%);
+	background: -ms-linear-gradient(0deg, #F5F5F5 0%, #FFF 25%, #FFF 75%, #F5F5F5 100%);
+	background: -webkit-linear-gradient(0deg, #F5F5F5 0%, #FFF 25%, #FFF 75%, #F5F5F5 100%);
+	background: linear-gradient(0deg, #F5F5F5 0%, #FFF 25%, #FFF 75%, #F5F5F5 100%);
+	border: 1px solid #777777;
+	-moz-border-radius: 6px 6px 6px 6px;
+	-webkit-border-radius: 6px 6px 6px 6px;
+	border-radius: 6px 6px 6px 6px;
+	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	margin: 50px auto;
+	padding: 15px;
+		position: absolute;
+	width: 800px;
+	right:50px;
+	bottom:0px;
+	z-index:3;
+}
+
+.page-curl:before, .page-curl:after {
+	background: none;
+	bottom: 12px;
+	-moz-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+	content: "";
+	height: 10px;
+	left: 12px;
+	position: absolute;
+	width: 40%;
+	z-index: -1;
+	-moz-transform: skew(-4deg) rotate(-4deg);
+	-webkit-transform: skew(-4deg) rotate(-4deg);
+	transform: skew(-4deg) rotate(-4deg);
+}
+
+.page-curl:after {
+	-moz-transform: skew(4deg) rotate(4deg);
+	-webkit-transform: skew(4deg) rotate(4deg);
+	transform: skew(4deg) rotate(4deg);
+	left: auto;
+	right: 12px;
+}
+
+.shadow-bottom:before, .shadow-bottom:after {
+	top: auto;
+	bottom: 12px;
+	-moz-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+}
+
+.rw{
+	position: relative;
+	height:auto;
+width:100%;
+display:none;
+z-index:15;
+background-color:red;
+bottom:-790px;
+
+}
+
+
+
+/*回去紐*/
+
+#gotop {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;    
+    padding: 20px 30px;    
+    font-size: 20px;
+    background: #777;
+    color: white;
+    cursor: pointer;
+border-radius: 50%;
+ z-index:5;
+
+
+}
+
+
+
+#top-bar{
+	 width:100%;
+	 height:80px;
+	
+	 position:fixed;
+	 top:-200px;
+	 z-index:5;
+	 /* CSS3 陰影*/
+	-webkit-box-shadow: 0px 8px 15px #333;
+	-moz-box-shadow: 0px 8px 15px #333;
+	box-shadow: 0px 8px 15px #333;
+       rgba(255, 0, 0, 0.1);
+	
+}
+
+  
+
+
+#top-bar  li{
+     padding:0; 
+	margin:0 1px 0 0; 
+	_margin:0 2px 0 0; 
+	width:150px;
+     font:24px Arial;
+      display: inline-block;
+      
+}
+
+#top-bar  li dl{
+
+width:150em;
+
+}
+#top-bar  li dt 
+{
+position:relative;
+margin: 20px 50px;
+width: 100px;
+height: 100px;
+line-height: 100px;
+border: 1px solid #ccc;
+font-size: 24px;
+font-weight: 900;
+text-align: center;
+border-radius: 100%;
+top:10%;
+-webkit-top:20%;
+left:1000px;
+background:#00FF00;
+display: inline-block; 
+z-index:2;
+ opacity:0.5;
+}
+
+#top-bar  li dt:hover 
+{background:#880000 ;}
+
+
+
+#top-down
+{
+position:fixed;
+height:200px;
+width:500em;
+ display:block;
+top:78px;
+left:0px;
+z-index:1;
+line-height:40px; 
+font-size:1.5em;
+
+
+background: rgba(243,226,199,1);
+background: -moz-linear-gradient(left, rgba(243,226,199,1) 0%, rgba(193,158,103,0.58) 50%, rgba(182,141,76,0.57) 51%, rgba(233,212,179,0.15) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(243,226,199,1)), color-stop(50%, rgba(193,158,103,0.58)), color-stop(51%, rgba(182,141,76,0.57)), color-stop(100%, rgba(233,212,179,0.15)));
+background: -webkit-linear-gradient(left, rgba(243,226,199,1) 0%, rgba(193,158,103,0.58) 50%, rgba(182,141,76,0.57) 51%, rgba(233,212,179,0.15) 100%);
+background: -o-linear-gradient(left, rgba(243,226,199,1) 0%, rgba(193,158,103,0.58) 50%, rgba(182,141,76,0.57) 51%, rgba(233,212,179,0.15) 100%);
+background: -ms-linear-gradient(left, rgba(243,226,199,1) 0%, rgba(193,158,103,0.58) 50%, rgba(182,141,76,0.57) 51%, rgba(233,212,179,0.15) 100%);
+background: linear-gradient(to right, rgba(243,226,199,1) 0%, rgba(193,158,103,0.58) 50%, rgba(182,141,76,0.57) 51%, rgba(233,212,179,0.15) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3', GradientType=1 );
+
+}
+#top-down a{
+text-decoration: none;
+}
+
+
+#top-downnon
+{
+position:fixed;
+
+ display:none;
+
+top:103px;
+left:-50px;
+
+
+}
+#eg{
+height:auto; 
+width:100%; 
+position: absolute;
+left:0px;
+bottom:-1350px;
+ }
+
+
+
+#footer{
+	 width:100%;
+	 height:100px;
+	 background:#CCDDFF;
+	 position:fixed;
+	bottom:50px;
+	 z-index:2;
+	 /* CSS3 陰影*/
+	-webkit-box-shadow: 0px 8px 15px #333;
+	-moz-box-shadow: 0px 8px 15px #333;
+	box-shadow: 0px 8px 15px #333;
+opacity:0.4;
+font-family: impact;
+font-size:150%;
+}
+
+
+
+
+/*手機*/
+@media screen and ( max-width: 640px ) {
+
+#banner{
+display:none;
+}
+
+.page-curl
+{
+display:none;
+}
+.rw{
+display:block;
+}
+
+#top-bar{
+display:none;
+}
+
+#eg{
+bottom:-500px;
+
+}
+
+}
+
+
+
+
+-->
+
+
+</style>
+
+
+<head >
+
+<title>服務網</title>
+	<meta name="keywords" content="服務">
+         
+</head>
+
+<body >
+ 
+<div id="banner"></div>
+<div class="divw" >
+	<p>服務網 <font size="6" style=" letter-spacing:normal;" >aaa</font>
+ 	</p>
+     </div>
+  
+ 
+     
+<div class="slideshow">
+		<ul>
+			<li>
+				<a href="#"  >
+				       
+					<img  id="w1" class="im" src="images/200882593740586.jpg"  title="" alt=""  / >
+				 
+				</a>
+			</li>
+			<li>
+				<a href="#"  >
+					<img id="w2" class="im" src="images/200882594116568.jpg" title="" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="#"   >
+					<img   id="w3" class="im" src="images/200882594213791.jpg" title="" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="#"   >
+					<img id="w4" class="im" src="images/200882594327285.jpg" title="" alt=""/>
+				</a>
+			</li>
+		</ul>
+	</div>
+  
+<div  id="fh" class="page-curl shadow-bottom">
+	<div id="a1">Freegan fixie banh mi, pickled art party trust fund iphone blog etsy occupy cardigan fap ethnic. Sartorial sriracha vinyl lo-fi cardigan. Tofu fingerstache vegan, shoreditch marfa pour-over occupy 8-bit american apparel four loko fixie lomo vice. Freegan irony chambray jean shorts PBR selvage. PBR messenger bag VHS, umami sustainable godard portland single-origin coffee. Wolf whatever butcher messenger bag yr american apparel fap. Tattooed master cleanse cred, narwhal gluten-free sriracha organic next level put a bird on it.</div>
+    <div id="a2">
+     dfhdfh
+    </div>
+    <div id="a3">
+    yulyl
+    </div>
+    <div id="a4">
+    qttrq
+    </div>
+
+</div>
+      
+
+
+
+<div  class="rw">
+	<div id="a">Freegan fixie banh mi, pickled art party trust fund iphone blog etsy occupy cardigan fap ethnic. Sartorial sriracha vinyl lo-fi cardigan. Tofu fingerstache vegan, shoreditch marfa pour-over occupy 8-bit american apparel four loko fixie lomo vice. Freegan irony chambray jean shorts PBR selvage. PBR messenger bag VHS, umami sustainable godard portland single-origin coffee. Wolf whatever butcher messenger bag yr american apparel fap. Tattooed master cleanse cred, narwhal gluten-free sriracha organic next level put a bird on it.</div>
+    <div id="b">
+     dfhdfh
+    </div>
+    <div id="c">
+    yulyl
+    </div>
+    <div id="d">
+    qttrq
+    </div>
+</div>
+
+
+<img id="eg" src="images/200882594512591.jpg"/>
+   
+ <div id="gotop">Top</div>
+
+<div id="top-bar">
+<ul>
+           <li id="aa1"></li> 
+	   <li id="aa2"></li>
+	   <li id="aa3"></li> 
+	   <li id="aa4"></li> 
+	   <li id="aa5"></li>  
+	   <li id="aa6"></li>   
+
+ </ul>	
+       </div>
+<div id="footer">
+&copy;2016  Zhenwei Liao. All rights reserved.
+</div>
+</body>
+</htm>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+ <script type="text/javascript">
+
+$(function(){
+//預設圖片淡出淡入的動畫時間
+	var _fadeSpeed = 600,_sspeed=2000;
+       	  var s1=document.getElementById("a1");    
+         var s2=document.getElementById("a2");  
+         var s3=document.getElementById("a3");  
+        var s4 =document.getElementById("a4");  
+	var my_array = new Array();
+	my_array[0]=s1;
+		my_array[1]=s2;
+		my_array[2]=s3;
+		my_array[3]=s4;
+	var ii=0;
+         my_array[ii++].style.color="#CC0000"; 
+	setTimeout(rot,2500);	
+	function rot()
+      {
+      my_array[(ii-1)%4].style.color="#000000"; 
+      my_array[ii%4].style.color="#CC0000";  
+      (ii==4)?ii=1:++ii;      
+       setTimeout(rot,2500);
+      
+      }
+
+	 // 把每一個 .slideshow 取出來做處理
+	$('.slideshow').each(function(){
+		// 先取得相關的 ul , li
+		// 並產生控制器
+		var $this = $(this), 
+			$ul = $this.find('ul'), 
+			$li = $ul.find('li'), 
+		
+			_len = $li.length, 
+			_index = 0, timer, _speed =4000;
+ 
+		// 先把第一張圖片之外的都透明度設成 0
+		$li.eq(_index).css('z-index', 2).siblings().css('opacity', 0);
+ 
+ 	setTimeout(autoClickNext, _fadeSpeed + _speed);
+	
+ 
+		// 自動播放下一張
+		function autoClickNext() {
+			_index = (_index + 1) % _len;
+			show();
+			timer = setTimeout(autoClickNext, _fadeSpeed + _speed);
+		}
+              
+		// 淡入淡出圖片
+		function show() {
+			$li.eq(_index).animate({
+				opacity: 1, 
+				zIndex: 2
+			}, _fadeSpeed).siblings(':visible').animate({
+				opacity: 0, 
+				zIndex: 1
+			}, _fadeSpeed);
+                    
+		}
+	});
+
+ 
+//回去鈕
+
+$("#gotop").click(function(){
+jQuery("html,body").animate({
+scrollTop:0
+},1000);
+});
+$(window).scroll(function() {
+if ( $(this).scrollTop() > 300){
+$('#gotop').fadeIn("fast");
+} else {
+$('#gotop').stop().fadeOut("fast");
+}
+});
+
+//浮動選單+版權
+
+　　$(window).bind('scroll resize', function(){
+　　var $this = $(this);
+　　var $this_Top=$this.scrollTop();
+
+　　//當高度小於100時，關閉區塊 
+　　if($this_Top < 100){
+　　　$('#top-bar').stop().animate({top:"-150px"});
+　　　}
+　　　　if($this_Top > 100){
+　　　　$('#top-bar').stop().animate({top:"0px"});
+　　　 }
+　    
+　if($this_Top < 800){
+　　　$('#footer').stop().animate({bottom:"-1000px"});
+　　　}
+　　　　if($this_Top >800){
+　　　　$('#footer').stop().animate({bottom:"0px"});
+　　　 }
+
+   　}).scroll();
+
+});
+
+</script>   
+ 	
+    <script type="text/babel">
+var HoverButton = React.createClass({  
+    render: function() {
+   return(
+      <ul id="navigation">
+	<li>  
+        	<dl>
+			<dt><a href="#">PC電腦不求人</a></dt>
+			<dd><a href="#">系統</a></dd>
+			<dd><a href="#">網路</a></dd>
+			<dd><a href="#">USB</a></dd>
+			<dd id="last"><a href="#">防毒</a></dd>
+		</dl>  
+    </li> 
+ 
+   <li>
+  
+        <dl>
+			<dt><a href="#">Photoshop</a></dt>
+			<dd><a href="#">疑難雜症</a></dd>
+			<dd id="last"><a href="#">實用範例</a></dd>			
+		</dl>
+     </li>
+
+       
+   <li>
+  
+        <dl>
+			<dt><a href="#">Photoshop</a></dt>
+			<dd><a href="#">疑難雜症</a></dd>
+			<dd id="last"><a href="#">實用範例</a></dd>			
+		</dl>
+     </li>     
+  
+     
+   <li>
+  
+        <dl>
+			<dt><a href="#">Photoshop</a></dt>
+			<dd><a href="#">疑難雜症</a></dd>
+			<dd id="last"><a href="#">實用範例</a></dd>			
+		</dl>
+     </li>
+    
+      
+   <li>
+  
+        <dl>
+			<dt><a href="#">Photoshop</a></dt>
+			<dd><a href="#">疑難雜症</a></dd>
+			<dd id="last"><a href="#">實用範例</a></dd>			
+		</dl>
+     </li>
+
+     
+   <li>
+  
+        <dl>
+			<dt><a href="#">Photoshop</a></dt>
+			<dd><a href="#">疑難雜症</a></dd>
+			<dd id="last"><a href="#">實用範例</a></dd>			
+		</dl>
+     </li>
+
+</ul>   
+     );}
+});
+
+var Topinsert1 = React.createClass({
+    getInitialState: function () {
+        return {hover: false};
+    },
+
+    mouseOver: function () {
+        this.setState({hover: true});
+    },
+    mouseOut: function () {
+        this.setState({hover: false});
+    },
+ 
+    render: function() { 
+     
+     let de=(<div id={this.state.hover==false?'top-downnon':'top-down'} onMouseOver={this.mouseOver}   onMouseOut={this.mouseOut}>                   
+                        <dd><a href="#">aa</a></dd>
+			<dd><a href="#">bb</a></dd>
+			<dd><a href="#">cc</a></dd>
+			<dd ><a href="#">dd</a></dd></div>);
+ 
+return(  <dl>       
+ <dt onMouseOver={this.mouseOver}   onMouseOut={this.mouseOut} >fer</dt> 
+  {de }
+    
+</dl>
+);
+
+
+     
+    }
+});
+
+
+var Topinsert2 = React.createClass({
+    getInitialState: function () {
+        return {hover: false};
+    },
+
+    mouseOver: function () {
+        this.setState({hover: true});
+    },
+    mouseOut: function () {
+        this.setState({hover: false});
+    },
+ 
+    render: function() { 
+     
+     let de=(<div id={this.state.hover==false?'top-downnon':'top-down'} onMouseOver={this.mouseOver}   onMouseOut={this.mouseOut}>                   
+                        <dd><a href="#">aa</a></dd>
+			<dd><a href="#">bb</a></dd>
+			<dd><a href="#">cc</a></dd>
+			<dd ><a href="#">dd</a></dd></div>);
+ 
+return(  <dl>       
+ <dt onMouseOver={this.mouseOver}   onMouseOut={this.mouseOut} >2</dt> 
+  {de }
+    
+</dl>
+);
+
+
+     
+    }
+});
+
+var Topinsert3 = React.createClass({
+    getInitialState: function () {
+        return {hover: false};
+    },
+
+    mouseOver: function () {
+        this.setState({hover: true});
+    },
+    mouseOut: function () {
+        this.setState({hover: false});
+    },
+ 
+    render: function() { 
+     
+     let de=(<div id={this.state.hover==false?'top-downnon':'top-down'} onMouseOver={this.mouseOver}   onMouseOut={this.mouseOut}>                   
+                        
+			<dd><a href="#">系統</a></dd>
+			<dd><a href="#">網路</a></dd>
+			<dd><a href="#">USB</a></dd>
+			<dd ><a href="#">防毒</a></dd>
+		 </div>);
+ 
+return(  <dl>       
+ <dt onMouseOver={this.mouseOver}   onMouseOut={this.mouseOut} >3</dt> 
+  {de }
+    
+</dl>
+);
+
+
+     
+    }
+});
+
+var Topinsert4 = React.createClass({
+    getInitialState: function () {
+        return {hover: false};
+    },
+
+    mouseOver: function () {
+        this.setState({hover: true});
+    },
+    mouseOut: function () {
+        this.setState({hover: false});
+    },
+ 
+    render: function() { 
+     
+     let de=(<div id={this.state.hover==false?'top-downnon':'top-down'} onMouseOver={this.mouseOver}   onMouseOut={this.mouseOut}>                   
+                        
+			<dd><a href="#">系統</a></dd>
+			<dd><a href="#">網路</a></dd>
+			<dd><a href="#">USB</a></dd>
+			<dd ><a href="#">防毒</a></dd>
+		 </div>);
+ 
+return(  <dl>       
+ <dt onMouseOver={this.mouseOver}   onMouseOut={this.mouseOut} >4</dt> 
+  {de }
+    
+</dl>
+);
+
+
+     
+    }
+});
+
+var Topinsert5 = React.createClass({
+    getInitialState: function () {
+        return {hover: false};
+    },
+
+    mouseOver: function () {
+        this.setState({hover: true});
+    },
+    mouseOut: function () {
+        this.setState({hover: false});
+    },
+ 
+    render: function() { 
+     
+     let de=(<div id={this.state.hover==false?'top-downnon':'top-down'} onMouseOver={this.mouseOver}   onMouseOut={this.mouseOut}>                   
+                        
+			<dd><a href="#">系統</a></dd>
+			<dd><a href="#">網路</a></dd>
+			<dd><a href="#">USB</a></dd>
+			<dd ><a href="#">防毒</a></dd>
+		 </div>);
+ 
+return(  <dl>       
+ <dt onMouseOver={this.mouseOver}   onMouseOut={this.mouseOut} >5</dt> 
+  {de }
+    
+</dl>
+);
+
+
+     
+    }
+});
+
+var Topinsert6 = React.createClass({
+    getInitialState: function () {
+        return {hover: false};
+    },
+
+    mouseOver: function () {
+        this.setState({hover: true});
+    },
+    mouseOut: function () {
+        this.setState({hover: false});
+    },
+ 
+    render: function() { 
+     
+     let de=(<div id={this.state.hover==false?'top-downnon':'top-down'} onMouseOver={this.mouseOver}   onMouseOut={this.mouseOut}>                   
+                        
+			<dd><a href="#">系統</a></dd>
+			<dd><a href="#">網路</a></dd>
+			<dd><a href="#">USB</a></dd>
+			<dd ><a href="#">防毒</a></dd>
+		 </div>);
+ 
+return(  <dl>       
+ <dt onMouseOver={this.mouseOver}   onMouseOut={this.mouseOut} >6</dt> 
+  {de }
+    
+</dl>
+);
+
+
+     
+    }
+});
+
+ ReactDOM.render(
+<HoverButton/>,
+document.getElementById('banner')
+);
+
+ ReactDOM.render(
+<Topinsert1/>,
+document.getElementById('aa1')
+);
+    
+ ReactDOM.render(
+<Topinsert2/>,
+document.getElementById('aa2')
+);    
+ 
+ ReactDOM.render(
+<Topinsert3/>,
+document.getElementById('aa3')
+);   
+
+ReactDOM.render(
+<Topinsert4/>,
+document.getElementById('aa4')
+);   
+    
+ReactDOM.render(
+<Topinsert5/>,
+document.getElementById('aa5')
+);   
+
+ReactDOM.render(
+<Topinsert6/>,
+document.getElementById('aa6')
+);   
+    </script>
+
+
+
+
+
+
