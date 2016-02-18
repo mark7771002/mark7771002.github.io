@@ -201,7 +201,6 @@ text-align: justify;
 
 
 
-
 /*輪播圖*/
 .slideshow {
 	position: absolute;
@@ -262,7 +261,7 @@ margin: 0 10px;
 		position: absolute;
 	width: 800px;
 	right:150px;
-	bottom:0px;
+	top:800px;
 	z-index:3;
 }
 
@@ -435,7 +434,7 @@ height:auto;
 width:93%; 
 position: absolute;
 left:0px;
-bottom:-1350px;
+top:1200px;
  }
 
 
@@ -461,14 +460,14 @@ font-size:150%;
 .gation {
   /* critical sizing and position styles */
   width: 100%;
-  height: 100%;
-  position: fixed;
+  height: aoto;
+ 
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index:0;
-  
+  position: absolute;
   /* non-critical appearance styles */
   list-style: none;
  display:none;
@@ -478,8 +477,8 @@ font-size:150%;
 .nav-item {
   /* non-critical appearance styles */
   width: 200px;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #000;
+  border-top: 1px ;
+  border-bottom: 1px ;
   background-color: red;
    display:none;
 }
@@ -503,8 +502,7 @@ font-size:150%;
 /* Site Wrapper - Everything that isn't navigation */
 .site-wrap {
   /* Critical position and size styles */
-  min-height: 100%;
-  min-width: 80%;
+ 
   background-color: white; /* Needs a background or else the nav will show through */
   position: relative;
   top: 0;
@@ -549,11 +547,11 @@ label[for="nav-trigger"] {
 }
 
 .nav-trigger:checked + label {
-  left: 215px;
+  left: 230px;
 }
 
 .nav-trigger:checked ~ .site-wrap {
-  left: 200px;
+  left: 100px;
   box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
 }
 
@@ -595,7 +593,7 @@ display:none;
 }
 
 #eg{
-bottom:-600px;
+top:1400px;
 width:100%;
 height:auto;
 }
@@ -611,6 +609,20 @@ label[for="nav-trigger"] {display:block;}
 
 
 
+@media screen and ( max-width: 400px ) {
+
+.slideshow{
+top:300px;
+
+}
+.rw{
+top:1050px;
+
+}
+
+#eg{
+top:1400px;
+}
 
 -->
 
