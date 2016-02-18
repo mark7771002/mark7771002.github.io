@@ -1,5 +1,6 @@
-<htm>
+ï»¿<htm>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
 <style style="text/css">
 <!--
 html, body { margin: 0; padding: 0; height: 100%; border:none; }
@@ -30,7 +31,6 @@ background-color: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,
 background-color: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
 background-color: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
-
 }
 ol, ul {
     list-style: none;
@@ -63,9 +63,12 @@ table {
 }
 
 #banner{
+ position:relative;
 padding:30px;
-width:100%;
+width:104%;
 background-color:#003377;
+bottom:75px;
+left:-68px;
 }
 #banner  #navigation {
         position:relative;
@@ -88,7 +91,7 @@ float:left;
  
 }
  
-/* ³]¸m¿ï³æ°Ï¶ô*/
+/* è¨­ç½®é¸å–®å€å¡Š*/
 #banner  #navigation li dl { 
 	width:100%;/*ie6*/
           margin:0; 
@@ -98,8 +101,7 @@ float:left;
 
 }  
 
- 
-/* ³]¸m¥D¿ï³ædt */
+/* è¨­ç½®ä¸»é¸å–®dt */
 #banner  #navigation li dt {
 	text-align:center;
 	line-height:100px;
@@ -123,7 +125,7 @@ box-shadow: 0 1px 5px rgba(0,0,0,0.75), inset 0 2px 14px 8px rgba(108,92,255,0.9
 
 #banner  #navigation li dt:hover{
 
--moz-box-shadow: 2px 2px 5px #003377 inset; /* ¦Ñªº Firefox */
+-moz-box-shadow: 2px 2px 5px #003377 inset; /* è€çš„ Firefox */
 box-shadow: 10px 10px 5px #003377 inset;
 
 
@@ -134,7 +136,7 @@ box-shadow: 10px 10px 5px #003377 inset;
     text-decoration:none;
 	}
  
-/* ³]¸m¤l¿ï³ædd¨ÃÁôÂÃ¤l¿ï³æ*/
+/* è¨­ç½®å­é¸å–®ddä¸¦éš±è—å­é¸å–®*/
 #banner  #navigation li dd { 
 	margin:0; 
     padding:0; 
@@ -169,7 +171,7 @@ box-shadow: 0 1px 5px rgba(0,0,0,0.75), inset 0 1px 0 white;
 
  
  
-/* ·Æ¹«·Æ¤JÅã¥Ü¤l¿ï³æ */
+/* æ»‘é¼ æ»‘å…¥é¡¯ç¤ºå­é¸å–® */
 #banner  #navigation li:hover dd,#banner  #navigation li a:hover dd { display:block}
  
 /*ie6 hack*/
@@ -181,9 +183,10 @@ box-shadow: 0 1px 5px rgba(0,0,0,0.75), inset 0 1px 0 white;
   background-color:#000000; 
  position:absolute ;
 height:auto;
-width:100%;
+width:103%;
 float:left;
-
+top:50px;
+left:-50px;
 }
 
 .divw p{
@@ -200,17 +203,19 @@ text-align: justify;
 
 
 
-/*½ü¼½¹Ï*/
+/*è¼ªæ’­åœ–*/
 .slideshow {
- position:relative;
+	position: absolute;
 	height:auto;
 	width:100%;
-        left:-15px;
-	bottom:-180px;
-	margin: 0 10px;
-     z-index:0;
+      left:-200px;
+	top:185px;
+margin: 0 10px;
+        z-index:-1;
 	border: 3px solid #ddd;
+
 }
+
 .slideshow li {
 
 	position: absolute;
@@ -224,12 +229,12 @@ text-align: justify;
 	padding: 0;
 	margin: 0 auto;
 	border: none;
-       	height: 600px;
-	width: 1885px;
+       	height:800px;
+	width: 100%;
         border:1px solid #999;
   padding:5px;
   background:#efefef;
- z-index:1;
+
 }
 
 
@@ -239,7 +244,7 @@ text-align: justify;
 }
 
 
-/*¤å¦r¦C*/
+/*æ–‡å­—åˆ—*/
 .page-curl {
 	background: #FFFFFF;
 	background: -moz-linear-gradient(0deg, #F5F5F5 0%, #FFF 25%, #FFF 75%, #F5F5F5 100%);
@@ -257,7 +262,7 @@ text-align: justify;
 	padding: 15px;
 		position: absolute;
 	width: 800px;
-	right:50px;
+	right:150px;
 	bottom:0px;
 	z-index:3;
 }
@@ -294,34 +299,34 @@ text-align: justify;
 	-webkit-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
 	box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
 }
-
+/*æ‰‹æ©Ÿæ–‡å­—åˆ—*/
 .rw{
 	position: relative;
 	height:auto;
-width:100%;
+width:120%;
 display:none;
 z-index:15;
 background-color:red;
-bottom:-790px;
-
+top:1000px;
+right:60px;
 }
 
 
 
-/*¦^¥h¯Ã*/
+/*å›å»ç´*/
 
 #gotop {
     display: none;
     position: fixed;
     right: 20px;
-    bottom: 20px;    
+    bottom: 100px;    
     padding: 20px 30px;    
     font-size: 20px;
     background: #777;
     color: white;
     cursor: pointer;
 border-radius: 50%;
- z-index:5;
+ z-index:25;
 
 
 }
@@ -331,11 +336,11 @@ border-radius: 50%;
 #top-bar{
 	 width:100%;
 	 height:80px;
-	
+	right:30px;
 	 position:fixed;
 	 top:-200px;
 	 z-index:5;
-	 /* CSS3 ³±¼v*/
+	 /* CSS3 é™°å½±*/
 	-webkit-box-shadow: 0px 8px 15px #333;
 	-moz-box-shadow: 0px 8px 15px #333;
 	box-shadow: 0px 8px 15px #333;
@@ -428,7 +433,7 @@ left:-50px;
 }
 #eg{
 height:auto; 
-width:100%; 
+width:93%; 
 position: absolute;
 left:0px;
 bottom:-1350px;
@@ -442,8 +447,8 @@ bottom:-1350px;
 	 background:#CCDDFF;
 	 position:fixed;
 	bottom:50px;
-	 z-index:2;
-	 /* CSS3 ³±¼v*/
+	 z-index:1;
+	 /* CSS3 é™°å½±*/
 	-webkit-box-shadow: 0px 8px 15px #333;
 	-moz-box-shadow: 0px 8px 15px #333;
 	box-shadow: 0px 8px 15px #333;
@@ -452,33 +457,155 @@ font-family: impact;
 font-size:150%;
 }
 
+/*æ¼¢å ¡*/
+/* Navigation Menu - Background */
+.gation {
+  /* critical sizing and position styles */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index:0;
+  
+  /* non-critical appearance styles */
+  list-style: none;
+ display:none;
+}
+
+/* Navigation Menu - List items */
+.nav-item {
+  /* non-critical appearance styles */
+  width: 200px;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #000;
+  background-color: red;
+   display:none;
+}
+
+.nav-item a {
+  /* non-critical appearance styles */
+  display: block;
+  padding: 1em;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.2s, background 0.5s;
+}
+
+.nav-item a:hover {
+  color: #c74438;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
+}
+
+/* Site Wrapper - Everything that isn't navigation */
+.site-wrap {
+  /* Critical position and size styles */
+  min-height: 100%;
+  min-width: 80%;
+  background-color: white; /* Needs a background or else the nav will show through */
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  
+  /* non-critical apperance styles */
+  padding: 4em;
+  
+  background-size: 200%;
+  
+}
+
+/* Nav Trigger */
+.nav-trigger {
+  /* critical styles - hide the checkbox input */
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  display:none;
+ 
+}
+
+label[for="nav-trigger"] {
+  /* critical positioning styles */
+  position: fixed;
+  left: 15px; top: 15px;
+  z-index: 2;
+   background-color:red;
+  /* non-critical apperance styles */
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  background-size: contain;
+   display:none;
+}
+
+/* Make the Magic Happen */
+.nav-trigger + label, .site-wrap {
+  transition: left 0.2s;
+}
+
+.nav-trigger:checked + label {
+  left: 215px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+  left: 200px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+  
 
 
 
-/*¤â¾÷*/
+
+
+
+/*æ‰‹æ©Ÿ*/
 @media screen and ( max-width: 640px ) {
 
 #banner{
 display:none;
 }
+.rw{
+display:block;
+}
+.divw{
+left:0px;
 
+}
+
+.slideshow{
+
+left:-10px;
+top:250px;
+}
 .page-curl
 {
 display:none;
 }
-.rw{
-display:block;
-}
+
 
 #top-bar{
 display:none;
 }
 
 #eg{
-bottom:-500px;
+bottom:-600px;
+width:100%;
+}
+#footer{
+display:none;
 
 }
-
+.gation {display:block;}
+.nav-item {display:block;}
+.nav-trigger {display:block;}
+label[for="nav-trigger"] {display:block;}
 }
 
 
@@ -492,16 +619,30 @@ bottom:-500px;
 
 <head >
 
-<title>ªA°Èºô</title>
-	<meta name="keywords" content="ªA°È">
+<title>æœå‹™ç¶²</title>
+	<meta name="keywords" content="æœå‹™">
          
 </head>
 
 <body >
- 
+<ul class="gation">
+    <li class="nav-item"><a href="#">Home</a></li>
+    <li class="nav-item"><a href="#">Portfolio</a></li>
+    <li class="nav-item"><a href="#">About</a></li>
+    <li class="nav-item"><a href="#">Blog</a></li>
+    <li class="nav-item"><a href="#">Contact</a></li>
+</ul>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger"></label>
+
+
+
+
+<div class="site-wrap">
 <div id="banner"></div>
 <div class="divw" >
-	<p>ªA°Èºô <font size="6" style=" letter-spacing:normal;" >aaa</font>
+	<p>æœå‹™ç¶² <font size="6" style=" letter-spacing:normal;" >aaa</font>
  	</p>
      </div>
   
@@ -580,6 +721,9 @@ bottom:-500px;
 
  </ul>	
        </div>
+
+       
+</div>       
 <div id="footer">
 &copy;2016  Zhenwei Liao. All rights reserved.
 </div>
@@ -592,7 +736,7 @@ bottom:-500px;
  <script type="text/javascript">
 
 $(function(){
-//¹w³]¹Ï¤ù²H¥X²H¤Jªº°Êµe®É¶¡
+//é è¨­åœ–ç‰‡æ·¡å‡ºæ·¡å…¥çš„å‹•ç•«æ™‚é–“
 	var _fadeSpeed = 600,_sspeed=2000;
        	  var s1=document.getElementById("a1");    
          var s2=document.getElementById("a2");  
@@ -615,10 +759,10 @@ $(function(){
       
       }
 
-	 // §â¨C¤@­Ó .slideshow ¨ú¥X¨Ó°µ³B²z
+	 // æŠŠæ¯ä¸€å€‹ .slideshow å–å‡ºä¾†åšè™•ç†
 	$('.slideshow').each(function(){
-		// ¥ı¨ú±o¬ÛÃöªº ul , li
-		// ¨Ã²£¥Í±±¨î¾¹
+		// å…ˆå–å¾—ç›¸é—œçš„ ul , li
+		// ä¸¦ç”¢ç”Ÿæ§åˆ¶å™¨
 		var $this = $(this), 
 			$ul = $this.find('ul'), 
 			$li = $ul.find('li'), 
@@ -626,20 +770,20 @@ $(function(){
 			_len = $li.length, 
 			_index = 0, timer, _speed =4000;
  
-		// ¥ı§â²Ä¤@±i¹Ï¤ù¤§¥~ªº³£³z©ú«×³]¦¨ 0
+		// å…ˆæŠŠç¬¬ä¸€å¼µåœ–ç‰‡ä¹‹å¤–çš„éƒ½é€æ˜åº¦è¨­æˆ 0
 		$li.eq(_index).css('z-index', 2).siblings().css('opacity', 0);
  
  	setTimeout(autoClickNext, _fadeSpeed + _speed);
 	
  
-		// ¦Û°Ê¼½©ñ¤U¤@±i
+		// è‡ªå‹•æ’­æ”¾ä¸‹ä¸€å¼µ
 		function autoClickNext() {
 			_index = (_index + 1) % _len;
 			show();
 			timer = setTimeout(autoClickNext, _fadeSpeed + _speed);
 		}
               
-		// ²H¤J²H¥X¹Ï¤ù
+		// æ·¡å…¥æ·¡å‡ºåœ–ç‰‡
 		function show() {
 			$li.eq(_index).animate({
 				opacity: 1, 
@@ -653,7 +797,7 @@ $(function(){
 	});
 
  
-//¦^¥h¶s
+//å›å»éˆ•
 
 $("#gotop").click(function(){
 jQuery("html,body").animate({
@@ -668,28 +812,28 @@ $('#gotop').stop().fadeOut("fast");
 }
 });
 
-//¯B°Ê¿ï³æ+ª©Åv
+//æµ®å‹•é¸å–®+ç‰ˆæ¬Š
 
-¡@¡@$(window).bind('scroll resize', function(){
-¡@¡@var $this = $(this);
-¡@¡@var $this_Top=$this.scrollTop();
+ã€€ã€€$(window).bind('scroll resize', function(){
+ã€€ã€€var $this = $(this);
+ã€€ã€€var $this_Top=$this.scrollTop();
 
-¡@¡@//·í°ª«×¤p©ó100®É¡AÃö³¬°Ï¶ô 
-¡@¡@if($this_Top < 100){
-¡@¡@¡@$('#top-bar').stop().animate({top:"-150px"});
-¡@¡@¡@}
-¡@¡@¡@¡@if($this_Top > 100){
-¡@¡@¡@¡@$('#top-bar').stop().animate({top:"0px"});
-¡@¡@¡@ }
-¡@    
-¡@if($this_Top < 800){
-¡@¡@¡@$('#footer').stop().animate({bottom:"-1000px"});
-¡@¡@¡@}
-¡@¡@¡@¡@if($this_Top >800){
-¡@¡@¡@¡@$('#footer').stop().animate({bottom:"0px"});
-¡@¡@¡@ }
+ã€€ã€€//ç•¶é«˜åº¦å°æ–¼100æ™‚ï¼Œé—œé–‰å€å¡Š 
+ã€€ã€€if($this_Top < 100){
+ã€€ã€€ã€€$('#top-bar').stop().animate({top:"-150px"});
+ã€€ã€€ã€€}
+ã€€ã€€ã€€ã€€if($this_Top > 100){
+ã€€ã€€ã€€ã€€$('#top-bar').stop().animate({top:"0px"});
+ã€€ã€€ã€€ }
+ã€€    
+ã€€if($this_Top < 800){
+ã€€ã€€ã€€$('#footer').stop().animate({bottom:"-1000px"});
+ã€€ã€€ã€€}
+ã€€ã€€ã€€ã€€if($this_Top >800){
+ã€€ã€€ã€€ã€€$('#footer').stop().animate({bottom:"0px"});
+ã€€ã€€ã€€ }
 
-   ¡@}).scroll();
+   ã€€}).scroll();
 
 });
 
@@ -702,11 +846,11 @@ var HoverButton = React.createClass({
       <ul id="navigation">
 	<li>  
         	<dl>
-			<dt><a href="#">PC¹q¸£¤£¨D¤H</a></dt>
-			<dd><a href="#">¨t²Î</a></dd>
-			<dd><a href="#">ºô¸ô</a></dd>
+			<dt><a href="#">PCé›»è…¦ä¸æ±‚äºº</a></dt>
+			<dd><a href="#">ç³»çµ±</a></dd>
+			<dd><a href="#">ç¶²è·¯</a></dd>
 			<dd><a href="#">USB</a></dd>
-			<dd id="last"><a href="#">¨¾¬r</a></dd>
+			<dd id="last"><a href="#">é˜²æ¯’</a></dd>
 		</dl>  
     </li> 
  
@@ -714,8 +858,8 @@ var HoverButton = React.createClass({
   
         <dl>
 			<dt><a href="#">Photoshop</a></dt>
-			<dd><a href="#">ºÃÃøÂø¯g</a></dd>
-			<dd id="last"><a href="#">¹ê¥Î½d¨Ò</a></dd>			
+			<dd><a href="#">ç–‘é›£é›œç—‡</a></dd>
+			<dd id="last"><a href="#">å¯¦ç”¨ç¯„ä¾‹</a></dd>			
 		</dl>
      </li>
 
@@ -724,8 +868,8 @@ var HoverButton = React.createClass({
   
         <dl>
 			<dt><a href="#">Photoshop</a></dt>
-			<dd><a href="#">ºÃÃøÂø¯g</a></dd>
-			<dd id="last"><a href="#">¹ê¥Î½d¨Ò</a></dd>			
+			<dd><a href="#">ç–‘é›£é›œç—‡</a></dd>
+			<dd id="last"><a href="#">å¯¦ç”¨ç¯„ä¾‹</a></dd>			
 		</dl>
      </li>     
   
@@ -734,8 +878,8 @@ var HoverButton = React.createClass({
   
         <dl>
 			<dt><a href="#">Photoshop</a></dt>
-			<dd><a href="#">ºÃÃøÂø¯g</a></dd>
-			<dd id="last"><a href="#">¹ê¥Î½d¨Ò</a></dd>			
+			<dd><a href="#">ç–‘é›£é›œç—‡</a></dd>
+			<dd id="last"><a href="#">å¯¦ç”¨ç¯„ä¾‹</a></dd>			
 		</dl>
      </li>
     
@@ -744,8 +888,8 @@ var HoverButton = React.createClass({
   
         <dl>
 			<dt><a href="#">Photoshop</a></dt>
-			<dd><a href="#">ºÃÃøÂø¯g</a></dd>
-			<dd id="last"><a href="#">¹ê¥Î½d¨Ò</a></dd>			
+			<dd><a href="#">ç–‘é›£é›œç—‡</a></dd>
+			<dd id="last"><a href="#">å¯¦ç”¨ç¯„ä¾‹</a></dd>			
 		</dl>
      </li>
 
@@ -754,8 +898,8 @@ var HoverButton = React.createClass({
   
         <dl>
 			<dt><a href="#">Photoshop</a></dt>
-			<dd><a href="#">ºÃÃøÂø¯g</a></dd>
-			<dd id="last"><a href="#">¹ê¥Î½d¨Ò</a></dd>			
+			<dd><a href="#">ç–‘é›£é›œç—‡</a></dd>
+			<dd id="last"><a href="#">å¯¦ç”¨ç¯„ä¾‹</a></dd>			
 		</dl>
      </li>
 
@@ -844,10 +988,10 @@ var Topinsert3 = React.createClass({
      
      let de=(<div id={this.state.hover==false?'top-downnon':'top-down'} onMouseOver={this.mouseOver}   onMouseOut={this.mouseOut}>                   
                         
-			<dd><a href="#">¨t²Î</a></dd>
-			<dd><a href="#">ºô¸ô</a></dd>
+			<dd><a href="#">ç³»çµ±</a></dd>
+			<dd><a href="#">ç¶²è·¯</a></dd>
 			<dd><a href="#">USB</a></dd>
-			<dd ><a href="#">¨¾¬r</a></dd>
+			<dd ><a href="#">é˜²æ¯’</a></dd>
 		 </div>);
  
 return(  <dl>       
@@ -878,10 +1022,10 @@ var Topinsert4 = React.createClass({
      
      let de=(<div id={this.state.hover==false?'top-downnon':'top-down'} onMouseOver={this.mouseOver}   onMouseOut={this.mouseOut}>                   
                         
-			<dd><a href="#">¨t²Î</a></dd>
-			<dd><a href="#">ºô¸ô</a></dd>
+			<dd><a href="#">ç³»çµ±</a></dd>
+			<dd><a href="#">ç¶²è·¯</a></dd>
 			<dd><a href="#">USB</a></dd>
-			<dd ><a href="#">¨¾¬r</a></dd>
+			<dd ><a href="#">é˜²æ¯’</a></dd>
 		 </div>);
  
 return(  <dl>       
@@ -912,10 +1056,10 @@ var Topinsert5 = React.createClass({
      
      let de=(<div id={this.state.hover==false?'top-downnon':'top-down'} onMouseOver={this.mouseOver}   onMouseOut={this.mouseOut}>                   
                         
-			<dd><a href="#">¨t²Î</a></dd>
-			<dd><a href="#">ºô¸ô</a></dd>
+			<dd><a href="#">ç³»çµ±</a></dd>
+			<dd><a href="#">ç¶²è·¯</a></dd>
 			<dd><a href="#">USB</a></dd>
-			<dd ><a href="#">¨¾¬r</a></dd>
+			<dd ><a href="#">é˜²æ¯’</a></dd>
 		 </div>);
  
 return(  <dl>       
@@ -946,10 +1090,10 @@ var Topinsert6 = React.createClass({
      
      let de=(<div id={this.state.hover==false?'top-downnon':'top-down'} onMouseOver={this.mouseOver}   onMouseOut={this.mouseOut}>                   
                         
-			<dd><a href="#">¨t²Î</a></dd>
-			<dd><a href="#">ºô¸ô</a></dd>
+			<dd><a href="#">ç³»çµ±</a></dd>
+			<dd><a href="#">ç¶²è·¯</a></dd>
 			<dd><a href="#">USB</a></dd>
-			<dd ><a href="#">¨¾¬r</a></dd>
+			<dd ><a href="#">é˜²æ¯’</a></dd>
 		 </div>);
  
 return(  <dl>       
